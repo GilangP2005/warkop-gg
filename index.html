@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WARKOP GG - Pesan Makanan</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>WARKOP GG</h1>
+    <p>Tempat Nongkrong Asik & Murah</p>
+  </header>
+
+  <main>
+    <section class="menu">
+      <h2>Menu Makanan</h2>
+      <div class="menu-list" id="menu-list">
+        <!-- Menu akan dimasukkan via JS -->
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>Keranjang Pesanan</h2>
+
+      <!-- Form Info Pemesan -->
+      <div class="user-info">
+        <label for="nama">Nama Pemesan:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama kamu"/>
+
+        <label for="meja">Nomor Meja:</label>
+        <input type="text" id="meja" placeholder="Contoh: 5 / Luar"/>
+      </div>
+
+      <ul id="cart-items"></ul>
+      <p>Total: Rp <span id="total">0</span></p>
+      <button onclick="checkout()">Checkout via WhatsApp</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 WARKOP GG - Dibuat dengan cinta dan kopi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
